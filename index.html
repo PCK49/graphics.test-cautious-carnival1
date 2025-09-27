@@ -88,16 +88,28 @@
                 window.location.href="https://gco12345.github.io/verysigmabypasser/loading.html";
               }
           }
-          else if (usin==="url") {
-            let reurl=prompt('enter url')
-            window.location.href=reurl;
-           // window.location.href='https://'+encodeURIComponent(reurl);
-          }
-          else {
-                alert('bruh');
-                window.location.href="https://gco12345.github.io/verysigmabypasser/loading.html";
-          }
-        }
+else if (usin === "url") {
+  let reurl = prompt('enter url');
+
+  if (!reurl) {
+    alert('No URL entered');
+    return;
+  }
+
+  if (reurl.includes("https://")) {
+    window.location.href = reurl;
+  } else if (reurl.includes("http://")) {
+    window.location.href = reurl;
+  } else if (reurl.includes("www.")) {
+    window.location.href = 'https://' + reurl;
+  } else if (!reurl.includes("https://")) {
+    window.location.href = 'https://' + reurl;
+  } else {
+    alert('bruh');
+    window.location.href = "https://gco12345.github.io/verysigmabypasser/loading.html";
+  }
+}
+
       </script>
     </body>
         
