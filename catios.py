@@ -1,5 +1,4 @@
 #app.py
-pip install flask
 from flask import Flask, request, redirect, render_template_string
 
 app=Flask(__name__)
