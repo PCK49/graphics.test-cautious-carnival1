@@ -1,7 +1,7 @@
 #app.py
 #catios.py
-from flask import Flask, request, redirect, render_template_string
-
+###from flask import Flask, request, redirect, render_template_string
+'''
 app=Flask(__name__)
 
 ninersite="https://49ers.com"
@@ -26,3 +26,4 @@ def submit():
     return redirect(ninersite)
 if __name__ == "__main__":
   app.run(debug=True)
+'''
